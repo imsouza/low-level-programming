@@ -15,6 +15,10 @@ $ ./file
 
 Unix/Linux
 
-# License
+## Author
+
+Mateus Almeida
+
+## License
 
 This project is licensed under the [MIT](https://github.com/imsouza/low-level-programming/blob/main/LICENSE) License.
