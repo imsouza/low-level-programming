@@ -25,9 +25,9 @@ $ ./test
 ```
 Makefile
 all:
-	nasm *.asm -felf64
-	gcc -c *.c
-	gcc -no-pie *.o -o test
+  nasm *.asm -felf64
+  gcc -c *.c
+  gcc -no-pie *.o -o test
 ```
 
 ## OS Support
