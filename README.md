@@ -1,6 +1,6 @@
 # Low Level Programming
 
-This repository contains code implementations in C and Assembly ​​for academic purposes
+This repository contains C and Assembly code implementations based on my low-level programming studies
 
 ## Compile
 
@@ -9,6 +9,25 @@ $ nasm -felf64 file.asm -o file.o
 $ ld -o file file.o
 $ chmod u+x file
 $ ./file
+```
+
+## Compile and link
+
+```
+$ nasm file.asm -f elf64
+$ gcc -c main.c -o main.o
+$ gcc file.o main.o -o test -no-pie
+$ ./test
+```
+
+## Makefile
+
+```
+Makefile
+all:
+	nasm *.asm -felf64
+	gcc -c *.c
+	gcc -no-pie *.o -o test
 ```
 
 ## OS Support

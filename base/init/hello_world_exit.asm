@@ -1,7 +1,3 @@
-;------------------------------------------------------------------------------
-; Displays the message "hello world" without the warning "segmentation fault"
-;------------------------------------------------------------------------------
-
 section .data
 message: db 'hello, world!', 10
 
