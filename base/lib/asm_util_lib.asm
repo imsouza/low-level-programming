@@ -47,11 +47,8 @@ print_uint:
     mov   [rdi], dl
     test  rax, rax
     jnz   .loop 
-   
     call  print_string
-    
     add   rsp, 24
- .end:
     ret
 
 
@@ -88,7 +85,6 @@ print_hax:
     pop   rax
     test  rcx, rcx
     jnz   .loop
- .end:
     ret
 
 
@@ -179,7 +175,6 @@ parse_uint:
     add   rax, r9
     inc   rcx 
     jmp   .loop 
- .end:
     mov   rdx, rcx
     ret
 
@@ -214,7 +209,7 @@ string_equals:
   jnz   string_equals
   mov   rax, 1
   ret
-  .no:
+ .no:
     xor   rax, rax
     ret
 
@@ -239,10 +234,10 @@ string_copy:
     inc   rdi
     inc   rsi
     test  dl, dl
-    jnz   .loop 
-    pop   rax
- .end: 
-    ret
+    jnz   .loop
+
+  pop   rax
+  ret
 
  .too_long:
     xor   rax, rax
