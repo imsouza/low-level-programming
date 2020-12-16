@@ -1,3 +1,5 @@
+bits 64
+
 section .text
 
 exit:
@@ -85,7 +87,8 @@ print_hax:
     pop   rax
     test  rcx, rcx
     jnz   .loop
-    ret
+    
+  ret
 
 
 read_char:
