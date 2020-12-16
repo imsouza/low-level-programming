@@ -23,7 +23,6 @@ $ ./test
 ## Makefile
 
 ```
-Makefile
 all:
   nasm *.asm -felf64
   gcc -c *.c
