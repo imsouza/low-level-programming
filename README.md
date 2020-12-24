@@ -2,7 +2,7 @@
 
 This repository contains C and Assembly code implementations based on my low-level programming studies
 
-## Compile
+## Compile pure asm
 
 ```
 $ nasm -felf64 file.asm -o file.o
@@ -11,7 +11,7 @@ $ chmod u+x file
 $ ./file
 ```
 
-## Compile and link
+## Compile and link with C file
 
 ```
 $ nasm file.asm -f elf64
