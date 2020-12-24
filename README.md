@@ -2,7 +2,7 @@
 
 This repository contains C and Assembly code implementations based on my low-level programming studies
 
-## Compile pure asm
+## Compile pure assembly
 
 ```
 $ nasm -felf64 file.asm -o file.o
