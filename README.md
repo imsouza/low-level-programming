@@ -1,6 +1,6 @@
 # Low Level Programming
 
-This repository contains C and Assembly code implementations based on my low-level programming studies
+This repository contains C and Assembly implementations based on my low-level programming studies
 
 ## Compile pure assembly
 
